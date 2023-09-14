@@ -1,0 +1,16 @@
+/* variables */
+
+:root{
+--heading-color:red;
+--text-size:12px;
+}
+
+h1{
+    color: var(--heading-color) !important;
+    font-size:var(--text-size)
+}
+
+p{
+    color:var(--heading-color) ;
+    font-size:var(--text-size)
+}
