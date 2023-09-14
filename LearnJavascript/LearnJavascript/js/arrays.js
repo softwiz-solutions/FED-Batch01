@@ -55,22 +55,16 @@
 
 
 // 3. shift
-// let fruitsName = ["banana", "apple", "orange", "stawberry", "jerry"]
+let fruitsName = ["banana", "apple", "orange", "stawberry", "jerry"]
 // var deletedElement=fruitsName.shift();
 // console.log("fruitsName",fruitsName,"deletedElement",deletedElement);
 // 4 . unshift--> add in the start of array
 // console.log("array", fruitsName);
-// fruitsName.unshift("watermelon", "melon", "hello")
-// console.log("array after unshfit", fruitsName);
+fruitsName.unshift("watermelon")
+console.log("array after unshfit", fruitsName);
 
-// add elements by your choice
 
-// let pets = ["dog", "duck", "horse", "cat", "sheep"]
 
-// // console.log("pets", pets);
-// pets.splice(2, 2, "pig", "duck", "emu");
-// pets.splice(2, 3)
-// console.log("pets splice", pets);
 
 
 

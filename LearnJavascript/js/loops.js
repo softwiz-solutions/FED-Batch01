@@ -1,4 +1,6 @@
 //loop
+// console.log("pakistan zindabad");
+
 
 /*
 1. while loop
@@ -10,15 +12,22 @@
 //     satement
 // }
 
-// var counter = 5;
+// var counter = 0;
 // while (counter <10) {
-//     console.log(counter);
+//     console.log("pakistan zindabad");
 //     counter++;
 // }
 
-// for (var i = 0; i < 10; i++) {
-//     console.log("hello");
+
+// console.log("after while looop");
+// for(initialization;condtion;increment/decrement){
+//     body
 // }
+// for(var i=100;i>0;i--){
+//     // console.log("paksitan zindabad");
+//     console.log(i);
+// }
+
 
 
 // var i = 10;
@@ -43,17 +52,28 @@
 // }
 
 // console.log("hello");
-outerloop:
-for (var i = 0; i < 10; i++) {
-    innterloop:
-    for (var j = 0; j < 10; j++) {
+// outerloop:
+// for (var i = 0; i < 10; i++) {
+//     innterloop:
+//     for (var j = 0; j < 10; j++) {
 
-        if (j == 3) {
-            break innterloop;
-        }
-    }
-    console.log("i", i);
-}
+//         if (j == 3) {
+//             break innterloop;
+//         }
+//     }
+//     console.log("i", i);
+// }
 
 
+var i = 10;
+do {
+    console.log("paksitan zindabad");
+    i++;
+} while (i < 10)
+/*
+1. initizlie
+2. body exceuction
+3. increment/decrement
+4. condition check
+*/
 
