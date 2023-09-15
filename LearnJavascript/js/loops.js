@@ -1,7 +1,5 @@
 //loop
 // console.log("pakistan zindabad");
-
-
 /*
 1. while loop
 2. do while loop
@@ -17,18 +15,16 @@
 //     console.log("pakistan zindabad");
 //     counter++;
 // }
-
-
 // console.log("after while looop");
+
 // for(initialization;condtion;increment/decrement){
 //     body
 // }
+
 // for(var i=100;i>0;i--){
 //     // console.log("paksitan zindabad");
 //     console.log(i);
 // }
-
-
 
 // var i = 10;
 // do {
@@ -65,15 +61,68 @@
 // }
 
 
-var i = 10;
-do {
-    console.log("paksitan zindabad");
-    i++;
-} while (i < 10)
+// var i = 10;
+// do {
+//     console.log("paksitan zindabad");
+//     i++;
+// } while (i < 10)
 /*
 1. initizlie
 2. body exceuction
 3. increment/decrement
 4. condition check
 */
+// nested loop
 
+// for (var i = 0; i < 10; i++) {
+
+//     for (var j = 0; j < 10; j++) {
+//         // console.log("inner loop j=", j);
+//         console.log("*");
+//     }
+//     console.log("\n");
+// }
+
+// break continue;
+// for (var i = 0; i < 10; i++) {
+//     console.log("i", i);
+//     if (i == 8) {
+//         continue
+//     }
+//     console.log("loop");
+// }
+
+// console.log("hello world");
+
+
+// arrays 
+
+
+var cleanestCities = ["Cheyenne", "Santa Fe", "Tucson", "Great Falls", "Karachi", "ISB"];
+var matchingCity = prompt("enter your city", cleanestCities);
+console.log("value of matching city", matchingCity);
+// if (matchingCity == cleanestCities[0]) {
+//     console.log("your city is beautiful");
+// }
+// else if (matchingCity == cleanestCities[1]) {
+//     console.log("your city is beautiful");
+// }
+// else if (matchingCity == cleanestCities[2]) {
+//     console.log("your city is beautiful");
+// }
+// else if (matchingCity == cleanestCities[3]) {
+//     console.log("your city is beautiful");
+// }
+// else if (matchingCity == cleanestCities[4]) {
+//     console.log("your city is beautiful");
+// }
+// else {
+//     console.log("your input is wrrong");
+// }
+
+// for (var i = 0; i < cleanestCities.length; i++) {
+//     if (matchingCity == cleanestCities[i]) {
+//         console.log("your city is beautiful", matchingCity);
+//         break;
+//     }
+// }
