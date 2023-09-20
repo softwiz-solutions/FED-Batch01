@@ -71,10 +71,63 @@
 // pets.splice(2, 2, "pig", "duck", "emu");
 // pets.splice(2, 3)
 // console.log("pets splice", pets);
+// array methods:
+// var pets=['324', 'duck', "dog"]
+// var values = ["ab2c", "abc", "abc"]
+// var frindName=['ali','ahmad','arslan']
+// var newArray=[pets,frindName]
+// var newArray=pets.concat(frindName)
+// console.log("newArray",newArray);
 
 
+//2.  EVERY()
+/*Returns true if every element in this array
+ satisfies the provided testing function.*/
+// var result = values.every((element) => element == "abc")
+// console.log("result", result)
 
 
+// 3. filter()
+/**
+ * Creates a new array with all of the elements of
+this array for which the provided filtering function
+returns true.
+ *
+ */
+
+// var values = [12, 24, 36, 40]
+
+// var filteredValue = values.filter((a) => a>12);
+// console.log("filteredValue", filteredValue)
+
+// 3. For Each()
+/*Calls a function for each element in the array. */
+// var values = [12, 24, 36, 40]
+// values.forEach((value,index)=>{
+//     console.log("value",value,index);
+// })
+
+
+// 4. index of
+/**
+ * Returns the first (least) index of an element
+within the array equal to the specified value, or -
+1 if none is found.
+ *
+ */
+// var values=[122,12,12,123]
+// var indexOf=values.indexOf(12)
+// var lastIndexOf=values.lastIndexOf(12)
+
+// console.log("indexof",indexOf);
+// console.log("lastIndexOf",lastIndexOf);
+
+
+// 5. join ()
+//Joins all elements of an array into a string.
+// var values=[234,"afd",4]
+// var newArray=values.join('-$')
+// console.log("values",newArray);
 
 
 
