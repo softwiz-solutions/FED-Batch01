@@ -129,6 +129,22 @@ within the array equal to the specified value, or -
 // var newArray=values.join('-$')
 // console.log("values",newArray);
 
+// var fruitsNames = ["apple", "banana", "orange"]
+// // console.log("fruistName", fruitsNames);
+// // map();
+// var newArray = fruitsNames.map((element, index) => {
+//     console.log("elemet", element);
+//     console.log("index", index);
+//     var newElement = element + "abc"
+//     return newElement
+// });
+// console.log("newArray", newArray);
+// console.log("fruitsName",fruitsNames);
 
+var numbArray = [0, 1, 2, 3,4]
+var total = numbArray.reduce((accumulator, currentValue) => {
+    console.log(accumulator, currentValue);
+    return accumulator + currentValue;
+});
 
-
+document.write("total is : " + total);
