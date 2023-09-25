@@ -141,10 +141,29 @@ within the array equal to the specified value, or -
 // console.log("newArray", newArray);
 // console.log("fruitsName",fruitsNames);
 
-var numbArray = [0, 1, 2, 3,4]
-var total = numbArray.reduce((accumulator, currentValue) => {
-    console.log(accumulator, currentValue);
-    return accumulator + currentValue;
-});
+// var numbArray = [0, 1, 2, 3,4]
+// var total = numbArray.reduce((accumulator, currentValue) => {
+//     console.log(accumulator, currentValue);
+//     return accumulator + currentValue;
+// });
+// document.write("total is : " + total);
+// var cityToCheck = 'karachi'
+// var someChars = cityToCheck.slice(0, 1).toUpperCase() + cityToCheck.slice(1);
+// console.log("somechars", someChars);
+// console.log("length",cityToCheck.length);
 
-document.write("total is : " + total);
+var text = 'It is startling to think that, even in the darkest depths of World War II, J. R. R. Tolkien was writing the trilogy, which contains, with the weird applicability available only to poetry and myth, the essential notion that the good gray wizard can understand the evil magi precisely because he is just enough like them to grasp their minds and motives in ways that they cannot grasp his'
+// for (var i = 0; i < text.length; i++) {
+//     if (text.slice(i, i + 12) === "World War II") {
+//         text = text.slice(0, i) + "the Second World War" + text.slice(i + 12);
+//     }
+// }
+
+// var firstChar = text.indexOf("World War II");
+// //61
+// if (firstChar != -1) {
+//     text = text.slice(0, firstChar) + "the Second World War" + text.slice(firstChar + 12)
+// }
+// // console.log("firstCahr", firstChar);
+// // console.log("text", text);
+// console.log("text", text);
