@@ -63,8 +63,20 @@ Write a js program, make a variable and get the user age and check that user age
 // let result = !(age > 19) || age < 15 && age > 17
 // //T || F && T
 // console.log("result", result);
+// function printDocument() {
+//     window.print()
+// }
+function getInputValue(id) {
+    var value1 = document.getElementById(id).value;
+    console.log("value", value1);
+    // var paragarah = document.getElementById('para').innerHTML;
+    // console.log("paragra", paragarah);
+    // paragarah = "hello"
 
+    document.getElementById('div1').innerHTML += "<h1>hello world</h1>"
+    document.getElementById('div1').className += " dark-bg"
 
-function printDocument() {
-    window.print()
+    // document.getElementById('para').innerHTML=value1
 }
+
+
