@@ -66,17 +66,44 @@ Write a js program, make a variable and get the user age and check that user age
 // function printDocument() {
 //     window.print()
 // }
-function getInputValue(id) {
-    var value1 = document.getElementById(id).value;
-    console.log("value", value1);
-    // var paragarah = document.getElementById('para').innerHTML;
-    // console.log("paragra", paragarah);
-    // paragarah = "hello"
+// function getInputValue(id) {
+//     var value1 = document.getElementById(id).value;
+//     console.log("value", value1);
+//     // var paragarah = document.getElementById('para').innerHTML;
+//     // console.log("paragra", paragarah);
+//     // paragarah = "hello"
 
-    document.getElementById('div1').innerHTML += "<h1>hello world</h1>"
-    document.getElementById('div1').className += " dark-bg"
+//     document.getElementById('div1').innerHTML += "<h1>hello world</h1>"
+//     document.getElementById('div1').className += " dark-bg"
 
-    // document.getElementById('para').innerHTML=value1
+//     // document.getElementById('para').innerHTML=value1
+// }
+
+// function swapImage(id) {
+//     document.getElementById(id).src = ""
+// }
+
+// function changeParaColor() {
+//     var allPragrah = document.getElementsByTagName('p')
+//     // console.log("all paragra", allPragrah);
+//     // allPragrah[0].style.color = "red"
+//     for (var i = 0; i < allPragrah.length; i++) {
+//         allPragrah[i].style.color = "green"
+//         allPragrah[i].style.fontSize='23px'
+//     }
+// }
+
+
+function dom() {
+    var div = document.getElementById('para-id');
+    var paragrah = div.getElementsByTagName('p');
+    var heading = div.getElementsByTagName('h1');
+    console.log("heading", heading);
+    for (var i = 0; i < paragrah.length; i++) {
+        paragrah[i].style.color = "green"
+        paragrah[i].style.fontSize = '23px'
+    }
+
+    heading[0].style.color = "green"
+
 }
-
-
