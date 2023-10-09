@@ -94,16 +94,38 @@ Write a js program, make a variable and get the user age and check that user age
 // }
 
 
-function dom() {
-    var div = document.getElementById('para-id');
-    var paragrah = div.getElementsByTagName('p');
-    var heading = div.getElementsByTagName('h1');
-    console.log("heading", heading);
-    for (var i = 0; i < paragrah.length; i++) {
-        paragrah[i].style.color = "green"
-        paragrah[i].style.fontSize = '23px'
-    }
+// function dom() {
+//     var div = document.getElementById('para-id');
+//     var paragrah = div.getElementsByTagName('p');
+//     var heading = div.getElementsByTagName('h1');
+//     console.log("heading", heading);
+//     for (var i = 0; i < paragrah.length; i++) {
+//         paragrah[i].style.color = "green"
+//         paragrah[i].style.fontSize = '23px'
+//     }
+//     heading[0].style.color = "green"
+// }
 
-    heading[0].style.color = "green"
 
-}
+// function dom() {
+// var div = document.getElementById('para-id')
+// var tagName = div.childNodes;
+// // console.log("tagName", tagName);
+// for (var i = 0; i < tagName.length; i++) {
+//     var tagType = tagName[i].nodeType;
+//     console.log("tagType ", i, "=", tagType, tagName[i]);
+//     if (tagType == 1) {
+//         tagName[i].innerHTML = "hello"
+//     }
+// }
+
+// console.log("tagName",tagName);
+// console.log("nodetype", nodeType);
+// var tagType=tagName.nodeType;
+// console.log("tagType",tagType);
+
+// }
+// dom()
+var div = document.getElementById('hello-div')
+// console.log("div partent",div.nextElementSibling);
+console.log("target node name",div.innerHTML);
