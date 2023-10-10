@@ -107,33 +107,53 @@ Write a js program, make a variable and get the user age and check that user age
 // }
 
 
-function dom() {
-    var div = document.getElementById('para-id')
-    var tagName = div.childNodes;
+// function dom() {
+// var div = document.getElementById('para-id')
+// var tagName = div.childNodes;
 
-    // for (var i = 0; i < tagName.length; i++) {
-    //     var tagType = tagName[i].nodeType;
-    //     console.log("tagType ", i, "=", tagType, tagName[i]);
-    //     if (tagType == 1) {
-    //         // tagName[i].innerHTML = "hello"
-    //         console.log("this is element");
-    //     }
-    //     else {
-    //         console.log("this is space");
-    //     }
-    // }
-    // for(let index of tagName){
-    //     console.log("tagname",index);
-    // }
-    // console.log("tagName", tagName);
-    // console.log("nodetype", nodeType);
-    // var tagType = tagName.nodeType;
-    // console.log("tagType", tagType);
-}
-dom()
+// for (var i = 0; i < tagName.length; i++) {
+//     var tagType = tagName[i].nodeType;
+//     console.log("tagType ", i, "=", tagType, tagName[i]);
+//     if (tagType == 1) {
+//         // tagName[i].innerHTML = "hello"
+//         console.log("this is element");
+//     }
+//     else {
+//         console.log("this is space");
+//     }
+// }
+// for(let index of tagName){
+//     console.log("tagname",index);
+// }
+// console.log("tagName", tagName);
+// console.log("nodetype", nodeType);
+// var tagType = tagName.nodeType;
+// console.log("tagType", tagType);
+// }
+// dom()
 // var div = document.getElementById('hello-div')
 // console.log("div partent",div.nextElementSibling);
+
 // console.log("target node name",div.innerHTML);
+
+// function dom() {
+//     var p = document.getElementById('para')
+//     p.setAttribute('class', 'dark-bg');// <p classs="dark-bg" ></p>
+//     p.innerHTML += " hello"
+//     console.log("p attribute",p.attributes);
+// }
+
+// dom()
+function addingNode() {
+    var newParagrah = document.createElement('p')
+    // console.log("new para", newParagrah);
+    var text = document.createTextNode("what is your name?")
+    newParagrah.appendChild(text);//<p>what is your name</p>
+    newParagrah.setAttribute('class', 'dark-bg');// <p classs="dark-bg" >what is your name</p>
+    var div = document.getElementById("parent-div")
+    div.appendChild(newParagrah)
+    // console.log("p",newParagrah);
+}
 
 
 
