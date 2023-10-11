@@ -144,16 +144,25 @@ Write a js program, make a variable and get the user age and check that user age
 // }
 
 // dom()
-function addingNode() {
-    var newParagrah = document.createElement('p')
-    // console.log("new para", newParagrah);
-    var text = document.createTextNode("what is your name?")
-    newParagrah.appendChild(text);//<p>what is your name</p>
-    newParagrah.setAttribute('class', 'dark-bg');// <p classs="dark-bg" >what is your name</p>
-    var div = document.getElementById("parent-div")
-    div.appendChild(newParagrah)
-    // console.log("p",newParagrah);
-}
+// function addingNode() {
+//     var newParagrah = document.createElement('p')
+//     // console.log("new para", newParagrah);
+//     var input = document.getElementById('input1').value
+//     var completeInput=document.getElementById('input1')
+//     completeInput.setAttribute('placeholder',"enter something")
+//     console.log("input value", input);
+//     var text = document.createTextNode(input || "your input was empty")
+//     newParagrah.appendChild(text);//<p>what is your name</p>
+//     newParagrah.setAttribute('class', 'dark-bg');// <p classs="dark-bg" >what is your name</p>
+//     var div = document.getElementById("parent-div")
+//     div.appendChild(newParagrah)
+//     console.log("div", div);
+//     document.getElementById('input1').value = ""
+   
+// }
+
+
+
 
 
 

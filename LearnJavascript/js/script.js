@@ -109,15 +109,15 @@ console.log("the data type of varialbe is ", typeof (a));
 // console.log('condition',condition)
 
 
-var number1 = 12;
-var number2 = 23;
+// var number1 = 12;
+// var number2 = 23;
 // var condition = number1 < number2 && (!number1 > 10) || number1 > 30;
 // // (false || false )
 // console.log("condition", condition)
 
-
-var result = number1 < number2 && (!number1 > 10) || number1 > 30 ? ' 1 is greaternumber than number 2' : 'not greater'
-console.log("result", result);
+// 
+// var result = number1 < number2 && (!number1 > 10) || number1 > 30 ? ' 1 is greaternumber than number 2' : 'not greater'
+// console.log("result", result);
 
 
 
