@@ -52,31 +52,83 @@ console.log("function", student1.walk());
 // }
 
 
-var studentArray = [student1, {
-    name: "faizan",
-    class: "5th semester",
-    rollNo: 4593,
-    friend: {
-        name: "fazizan",
-        id: 'fjdksfjklsdfjkl'
-    },
-    walk: function () {
-        console.log("waqas is walking")
-        return this.id
-    }
-}, {
-    name: "ali",
-    class: "5th semester",
-    rollNo: 4593,
-    friend: {
-        name: "fazizan",
-        id: 'fjdksfjklsdfjkl'
-    },
-    walk: function () {
-        console.log("waqas is walking")
-        return this.id
-    }
-}
-]
+// var studentArray = [student1, {
+//     name: "faizan",
+//     class: "5th semester",
+//     rollNo: 4593,
+//     friend: {
+//         name: "fazizan",
+//         id: 'fjdksfjklsdfjkl'
+//     },
+//     walk: function () {
+//         console.log("waqas is walking")
+//         return this.id
+//     }
+// }, {
+//     name: "ali",
+//     class: "5th semester",
+//     rollNo: 4593,
+//     friend: {
+//         name: "fazizan",
+//         id: 'fjdksfjklsdfjkl'
+//     },
+//     walk: function () {
+//         console.log("waqas is walking")
+//         return this.id
+//     }
+// }
+// ]
 
-console.log("objec",studentArray[0].name);
+// console.log("objec",studentArray[0].name);
+
+var student = {
+    name: "faizan",
+    rollNO: 343,
+    address: "hello"
+}
+console.log("keys", Object.keys(student));//['name', 'rollNO', 'address']
+console.log("values", Object.values(student))//['faizan', 343, 'hello']
+console.log("eneries", Object.entries(student))
+//
+// [Array(2), Array(2), Array(2)]
+// 0
+// :
+// (2)['name', 'faizan']
+// 1
+// :
+// (2)['rollNO', 343]
+// 2
+// :
+// (2)['address', 'hello']
+
+
+
+// console.log("property",student.hasOwnProperty("jfksdjf"));
+// console.log("check ", "namjfdfe" in student);
+// var objectValuesArray = Object.values(student)
+// for (let item in objectValuesArray) {
+//     // console.log("student",student);
+//     console.log("person", objectValuesArray[item]);
+// }
+// Object.keys(testScore);  // gives all keys
+// Object.values(testScore); // gives all values
+// Object.entries(testScore); // gives nested arrays of key-value pairs
+
+
+
+var studen1t = {
+    studentName: "faizan",
+    studentId: "3r3",
+}
+
+let { studentId } = studen1t
+// // console.log("studet", name);
+console.log("student", studentId);
+// if (studentId == "jfkd") {
+//     console.log("student name", studentName);
+// }
+
+var student = [2, 4, 5]
+// var [index1, index3, student3] = student
+// console.log("values", student1);
+
