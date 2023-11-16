@@ -1,9 +1,12 @@
 'use client'
 import React, { useState } from 'react'
 import Button from './Button'
+import { IMAGES } from '@/assets/images'
+import Image from 'next/image'
 
 const Counter = () => {
     const [counter, setCounter] = useState(0)
+    console.log("images",IMAGES);
     const [show, setShow] = useState(false)
     const showAlert = () => {
         alert("hello")
@@ -17,6 +20,7 @@ const Counter = () => {
     }
     return (
         <div className='flex gap-3 items-center'>
+            <Image src={IMAGES.firstImage} alt="img" width={120} height={120} onLoad={(e) => console.log("hello ",e.target.alt)}/>
             <Button title="-" onClick={decrement} />
             <h1>{counter}</h1>
             <Button title="+" onClick={increment} />
