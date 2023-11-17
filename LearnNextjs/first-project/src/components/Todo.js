@@ -1,21 +1,11 @@
 'use client'
 import React, { useState } from 'react'
 import Button from './Button'
+import useTodo from '@/customeHooks/useTodo'
 
 const Todo = () => {
-    const [todoList, setTodoList] = useState([])
-    const [userInput, setUserInput] = useState("")
-    const submitTodo = () => {
-        if (userInput == "") {
-            alert("please enter the value")
-        }
-        else {
-            let todo = [...todoList, userInput]
-            setTodoList(todo)
-            setUserInput("")
-            console.log("todo", todo);
-        }
-    }
+    // CRUD (create,read,update,delete)
+    const { todoList, setTodoList, userInput, isUpdate, setIsUpdate, editTodo, setUserInput, submitTodo, deleteTodo, updateTodo } = useTodo()
     return (
         <div className='p-5 '>
             <input
@@ -25,17 +15,17 @@ const Todo = () => {
                     setUserInput(e.target.value);
                     console.log("user input", userInput);
                 }} type='text' className='border-2 border-yellow-900 p-4 rounded-lg mr-4' />
-            <Button title='submit' onClick={submitTodo} />
-            <ul>
-                {todoList.map((item, index) => {
-                    return (
-                        <div>
-                            <li>{index + 1} {item}</li>
-                            <Button title='delete' />
-                        </div>
-                    )
-                })}
-            </ul>
+            {!isUpdate && <Button title='submit' onClick={submitTodo} />}
+            {todoList.map((item, index) => {
+                return (
+                    <div key={index}>
+                        <li>{index + 1} {item}</li>
+                        <Button title='delete' onClick={() => deleteTodo(index)} />
+                        {isUpdate ? <Button title='Update' onClick={() => updateTodo(index)} /> : <Button title='Edit' onClick={() => editTodo(item)} />}
+                    </div>
+                )
+            })}
+
         </div>
     )
 }
