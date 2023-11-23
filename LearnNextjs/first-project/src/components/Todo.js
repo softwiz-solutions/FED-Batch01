@@ -1,9 +1,22 @@
 'use client'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Button from './Button'
 import useTodo from '@/customeHooks/useTodo'
+import { useRouter } from 'next/navigation'
 
 const Todo = () => {
+    const router = useRouter()
+    const userLogined = false
+    useEffect(() => {
+        console.log("helo this is use effect function");
+        if (userLogined) {
+            router.push('/about-us')
+        }
+        else {
+            router.push("/jfdjf")
+        }
+
+    }, [])
     // CRUD (create,read,update,delete)
     const { todoList, setTodoList, userInput, isUpdate, setIsUpdate, editTodo, setUserInput, submitTodo, deleteTodo, updateTodo } = useTodo()
     return (
