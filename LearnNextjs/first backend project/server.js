@@ -4,6 +4,7 @@ const port = 8000;
 var bodyParser = require("body-parser");
 const verifyUser = require("./src/utils/verifyUser");
 const TodoRouter = require("./src/routes/todoRoutes");
+const UserRouter = require("./src/routes/userRoutes");
 // get --> get
 // post--> create
 // delete --> delete
@@ -14,7 +15,8 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 // post router
-app.use(TodoRouter);
+app.use( TodoRouter);
+app.use(UserRouter);
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);

@@ -5,10 +5,11 @@ const prisma = new PrismaClient();
 const createTodo = async (req, res) => {
   try {
     console.log("req.body", req.body);
-    const { title } = req.body;
+    const { title, userId } = req.body;
     const todo = await prisma.Todos.create({
       data: {
         title,
+        userId,
       },
     });
     console.log("todo", todo);
@@ -97,7 +98,13 @@ const updateTodo = async (req, res) => {
 };
 const getTodos = async (req, res) => {
   try {
-    const allTodos = await prisma.Todos.findMany();
+    console.log("userId", req.query.userId);
+    const userId = req.query.userId;
+    const allTodos = await prisma.Todos.findMany({
+      where: {
+        userId,
+      },
+    });
     console.log("allTodos", allTodos);
     const response = {
       success: true,
@@ -106,6 +113,7 @@ const getTodos = async (req, res) => {
     };
     res.status(200).json(response);
   } catch (error) {
+    console.log("error", error.message);
     const response = {
       success: false,
       message: "Error in get todos",
